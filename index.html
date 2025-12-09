@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgian Skills Association - Website Under Construction</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font for modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Using the dark gray background color from the uploaded image for a consistent look */
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+        /* Custom background to display the logo faintly */
+        .bg-logo-faint {
+            background-image: url('image_4d904c.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%; /* Adjust size as needed */
+            opacity: 0.1; /* Make it very faint */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        /* Ensure content is above the faint logo */
+        .content-container {
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <!-- Faint background logo -->
+    <div class="bg-logo-faint"></div>
+
+    <!-- Main Content Container -->
+    <div class="content-container flex flex-col items-center justify-center min-h-screen p-6">
+       
+        <!-- Organization Name Card -->
+        <div class="bg-white/10 backdrop-blur-sm p-8 md:p-12 rounded-2xl shadow-2xl text-center max-w-2xl w-full border border-green-500/30">
+           
+            <h1 class="text-4xl md:text-6xl font-extrabold text-green-400 mb-4 tracking-tight">
+                Georgian Skills Association
+            </h1>
+            <p class="text-xl md:text-2xl text-white mb-10 font-medium">
+                for Education and Development
+            </p>
+
+            <!-- Status Message -->
+            <div class="bg-yellow-500/20 p-4 rounded-xl mb-8 border-l-4 border-yellow-400">
+                <p class="text-2xl md:text-3xl font-bold text-yellow-300">
+                    Website Under Construction
+                </p>
+                <p class="text-lg text-white mt-2">
+                    Our new and improved website is currently being updated.
+                    We appreciate your patience!
+                </p>
+            </div>
+           
+            <!-- Contact Information -->
+            <p class="text-lg md:text-xl font-light text-gray-300">
+                For any inquiries or immediate questions, please contact us at:
+            </p>
+            <a href="mailto:info@geoskills.org" class="text-2xl md:text-4xl font-extrabold text-green-400 hover:text-green-300 transition duration-300 mt-2 block">
+                info@geoskills.org
+            </a>
+
+        </div>
+
+        <!-- Footer / Placeholder for future links -->
+        <footer class="mt-8 text-sm text-gray-500">
+            &copy; 2025 Georgian Skills Association. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>
